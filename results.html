@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Results</title>
+  </head>
+  <body>
+      <div id = "results" class = "results"></div>
+	<a href = "BOB P1.html">Back to the main page</a>
+    <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,name) => {resultsList.append(`${name}: ${value}`)
+    resultsList.append(document.createElement('br'))
+})
+    </script>
+
+    <h3 class = "results">Thank you for your order, we will be in touch soon</h3>
+  </body>
+</html>

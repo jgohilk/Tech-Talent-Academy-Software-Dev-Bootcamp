@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+          BOB's Computer Exchange Bureau
+      </title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <script src="index.js"></script>
+        <h1>Place an order</h1>
+
+<form class = core action = "results.html" method ="get">
+  <h3>Personal Details</h3>
+  <label>First Name:<input type = "text" id = "fname" name = "fname" placeholder = "Please enter your first name" required></label><br>
+  <label>Last Name:<input type = "text" id = "lname" name = "lname" placeholder = "Please enter your last name" required></label><br>
+  <label>Product Name:<input type = "text" id = "pname" name = "pname" placeholder = "Please enter the name of the product you would like to order" required</label><br>
+  <label>Quantity<input type = "number" id = "quantity" name = "quantity" min = "1" max = "10" required></label><br>
+  <h3>Address</h3>
+  <div>
+    <label>Address Line 1<input type = "text" placeholder = "Please enter the first line of your address" required></label>
+  </div>
+  <div>
+    <label>Address Line 2<input type = "text" placeholder = "please enter the second line of your address" required></label>
+  </div>
+  <div>
+    <label>City<input type = "text" placeholder = "Please enter your City" required</label>
+  </div>
+  <div>
+    <label>State/Province <input type = "text" placeholder = "Please enter your state/province" required</label>
+  </div>
+  <div>
+    <label>ZIP/Postal Code<input type = "text" placeholder = "Please enter your ZIP/Postal Code" required</label>
+  </div>
+  <div>
+    <label>State</label>
+    <select id = "State">
+      <option value = "England">England</option>
+      <option value = "Northen Ireland">Northen Ireland</option>
+      <option value = "Scotland">Scotland</option>
+      <option value = "Wales">Wales</option>
+    </select>
+  </div>
+
+    <h3>Payment</h3>
+    <div>
+    <label>Card Number<input type = "text" placeholder = "###-###-###"></label>
+    </div>
+    <div>
+    <label>Expiry Date <input type = "date" id = "expiry date" required</label>
+    </div>
+    <div>
+      <label>CVV-Number<input type = "text" placeholder = "xxx" required></label>
+    </div>
+    <div>
+      <input type ="submit">
+    </div>
+
+  
+
+
+
+</form>
+      </body>
+
+
+
